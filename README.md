@@ -1,6 +1,4 @@
 # Quiz
-Math Quiz App
-Overview
 
 This is a simple Math Quiz Web App designed to test and improve basic to advanced math skills. The app is mobile-friendly and works on any device (phone, tablet, or computer). It features 50 questions, starting from easy and gradually becoming harder.
 
