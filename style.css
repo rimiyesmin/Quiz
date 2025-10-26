@@ -1,0 +1,86 @@
+/* General Body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #e0f0ff; /* Light blue background */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Quiz Container */
+.quiz-container {
+    background: #007bff; /* Blue theme */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%; /* Full width for mobile */
+    max-width: 400px; /* Maximum width on larger screens */
+    color: white;
+}
+
+/* Question Text */
+#question {
+    font-size: 18px; /* Standard readable size */
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+/* Option Buttons */
+.option-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 0; /* Slightly smaller */
+    width: 90%;
+    max-width: 300px;
+    cursor: pointer;
+    font-size: 16px; /* Standard readable size */
+    border: none;
+    border-radius: 8px;
+    background-color: #3399ff; /* Lighter blue */
+    color: white;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.option-btn:hover {
+    background-color: #66b3ff;
+}
+
+/* Correct / Wrong colors */
+.option-btn.correct {
+    background-color: #28a745 !important; /* Green */
+}
+
+.option-btn.wrong {
+    background-color: #dc3545 !important; /* Red */
+}
+
+/* Score text */
+#score {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Touch effect */
+.option-btn:active {
+    transform: scale(0.98);
+}
+
+/* Very small screens adjustments */
+@media (max-width: 350px) {
+    #question {
+        font-size: 16px;
+    }
+    .option-btn {
+        font-size: 14px;
+        width: 95%;
+    }
+    #score {
+        font-size: 14px;
+    }
+}
